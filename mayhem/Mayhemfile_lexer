@@ -1,0 +1,10 @@
+project: savantenvs/rnix-parser
+target: lexer-buggy-mhh-run-4
+
+cmds:
+  - cmd: /mayhem/lexer
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+# origin: https://app.mayhem.security/mayhemheroes/rnix-parser/lexer/4
