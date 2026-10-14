@@ -1,0 +1,11 @@
+# seed-from: https://app.mayhem.security/savantenvs/rnix-parser/parser
+project: savantenvs/rnix-parser
+target: parser-mined-121e418
+
+cmds:
+  - cmd: /mayhem/parser
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parser-mined-121e418/testsuite
